@@ -2,10 +2,28 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 
-class App extends React.Component {
-    render() {
-        return <div></div>;
-    }
+import Droppable from "./Droppable.js";
+import Draggable from "./Draggable.js";
+
+function App() {
+    return (
+        <div id="App">
+            <Droppable className="container">
+                <Draggable id="div-1" className="box">
+                    Div 1
+                </Draggable>
+                <Draggable id="div-2" className="box">
+                    Div 2
+                </Draggable>
+                <Draggable id="div-3" className="box">
+                    Div 3
+                </Draggable>
+                <Draggable id="div-4" className="box">
+                    Div 4
+                </Draggable>
+            </Droppable>
+        </div>
+    );
 }
 
 ReactDOM.render(
@@ -14,8 +32,3 @@ ReactDOM.render(
     </React.StrictMode>,
     document.getElementById("root"),
 );
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
