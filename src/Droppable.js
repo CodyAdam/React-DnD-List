@@ -10,7 +10,11 @@ export default function Droppable(props) {
     };
     return (
         <div className={props.className} style={style}>
-            {props.children}
+            {props.children[0]}
+            {props.children[1]}
+            <div style={{ height: "5px", backgroundColor: "grey" }} />
+            {props.children[2]}
+            {props.children[3]}
         </div>
     );
 }
