@@ -108,11 +108,11 @@ export default class Droppable extends React.Component {
                             key={card.id}
                             style={!card.drag ? cardStyle : cardDragStyle}
                         >
-                            <span>
+                            <div>
                                 <span className="name">{card.content}</span>
                                 <br />
                                 <span className="id">id : {card.id}</span>
-                            </span>
+                            </div>
                             <div
                                 className="drag"
                                 onMouseDown={(e) => {
