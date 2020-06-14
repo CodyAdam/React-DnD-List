@@ -3,7 +3,6 @@ import React from "react";
 /**
  * @param id the item identifier
  * @param className
- * @param draggable boolean
  */
 export default class Draggable extends React.Component {
     constructor(props) {
@@ -31,7 +30,6 @@ export default class Draggable extends React.Component {
             this.setState({
                 relativePos: { x: -this.state.startPos.x + e.clientX, y: -this.state.startPos.y + e.clientY },
             });
-        console.log(this.state.relativePos);
     }
 
     render() {
