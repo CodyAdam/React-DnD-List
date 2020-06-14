@@ -3,17 +3,14 @@ import ReactDOM from "react-dom";
 import "./index.css";
 
 import Droppable from "./Droppable.js";
-import Draggable from "./Draggable.js";
 
-const initialState = {
-    cards: [
-        { id: "card-1", content: "Card 1", drag: false },
-        { id: "card-2", content: "Card 2", drag: false },
-        { id: "card-3", content: "Card 3", drag: false },
-        { id: "card-4", content: "Card 4", drag: false },
-        { id: "card-5", content: "Card 5", drag: false },
-    ],
-};
+const initialState = [
+    { id: "card-1", content: "Name 1", drag: false },
+    { id: "card-2", content: "Name 2", drag: false },
+    { id: "card-3", content: "Name 3", drag: false },
+    { id: "card-4", content: "Name 4", drag: false },
+    { id: "card-5", content: "Name 5", drag: false },
+];
 
 function App() {
     return (
