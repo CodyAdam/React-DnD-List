@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Drag and Drop list system made using React
 
-Features :
+#### Features :
 
 -   Drag and drop to reorder the list
 -   Add item to the list
