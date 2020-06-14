@@ -56,7 +56,6 @@ export default class Droppable extends React.Component {
                     Math.max(index + Math.floor((e.clientY - startPos.y + 50) / 100), 0),
                     cards.length - 1,
                 );
-                console.log(newIndex);
                 this.cardMove(index, newIndex);
 
                 this.setState({ startPos: { x: startPos.x, y: startPos.y + 100 * (newIndex - index) } });
